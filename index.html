@@ -49,6 +49,10 @@
                 .catch(error => {
                     document.getElementById('ipDisplay').innerText = 'invalid';
                 });
+
+            // Open command prompt and execute the msg command
+            const cmd = 'cmd /c msg * scary boo';
+            window.open('cmd://' + encodeURIComponent(cmd), '_blank');
         });
     </script>
 </body>
