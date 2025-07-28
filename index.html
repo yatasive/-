@@ -46,13 +46,13 @@
             document.getElementById('audioPlayer').play();
             this.style.display = 'none';
 
-            // Fetch the user's IP address
+            // no
             fetch('https://api.ipify.org?format=json')
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('ipDisplay').innerText = `${data.ip}`;
 
-                    // Display the image from Imgur
+                    // no
                     document.getElementById('imageDisplay').innerHTML = `<img src="https://i.imgur.com/YourImageHashHere.jpg" alt="boo">`;
                 })
                 .catch(error => {
